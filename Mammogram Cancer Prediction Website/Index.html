@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block body%}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form method="post">
+                    <div class="form-group">
+                          <div class="form-group row">
+                              <div class="col-xs-2">
+                                <label for="ex1">Number 1</label>
+                                <input class="form-control" id="ex1" type="number" name="ex1">
+                              </div>
+                              <div class="col-xs-2">
+                                <label for="ex2">Number 2</label>
+                                <input class="form-control" id="ex2" type="number" name="ex2">
+                              </div>
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                       <div class="form-group row">
+                              <div class="col-xs-2">
+                                <label for="ex3">Number 3</label>
+                                <input class="form-control" id="ex3" type="number"  name="ex3">
+                              </div>
+                              <div class="col-xs-2">
+                                <label for="ex4">Number 4</label>
+                                <input class="form-control" id="ex4" type="number" name="ex4">
+                              </div>
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group row">
+                              <div class="col-xs-2">
+                                <label for="ex5">Number 5</label>
+                                <input class="form-control" id="ex5" type="number" name="ex5">
+                              </div>
+                              <div class="col-xs-2">
+                                <label for="ex6">Number 6</label>
+                                <input class="form-control" id="ex6" type="number" name="ex6">
+                              </div>
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                       <div class="form-group row">
+                              <div class="col-xs-2">
+                                <label for="ex7">Number 7</label>
+                                <input class="form-control" id="ex7" type="number" name="ex7">
+                              </div>
+                              <div class="col-xs-2">
+                                <label for="ex8">Number 8</label>
+                                <input class="form-control" id="ex8" type="number" name="ex8">
+                              </div>
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group row">
+                              <div class="col-6">
+                                <label for="ex9">Number 9</label>
+                                <input class="form-control" id="ex9" type="number" name="ex9">
+                              </div>
+
+                          </div>
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
+                    <!-- Default inline 1-->
+                    <div class="custom-control custom-checkbox custom-control-inline" style="margin-left: 50px;">
+                        <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                        <label class="custom-control-label" for="defaultInline1">KNN </label>
+                    </div>
+                    <!-- Default inline 2-->
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                        <label class="custom-control-label" for="defaultInline2">ML</label>
+                    </div>
+                    <!-- Default inline 3-->
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                        <label class="custom-control-label" for="defaultInline3">CSR</label>
+                    </div><br>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+                </form>
+            </div>
+            <div class="col" style="border-left: 6px dotted grey;">
+                <h2>Result :</h2><span> This result is base on Random Classifier.</span><br>
+                <span>{{ac}}</span>
+            </div>
+        </div>
+    </div>
+   {% endblock %}
